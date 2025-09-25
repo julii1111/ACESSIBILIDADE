@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Jimin</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css">
+ <link rel="stylesheet" href="style.css">
+  <!-- Fontes -->
+  <link href="https://fonts.googleapis.com/css2?family=Chiron+GoRound+TC:wght@200..900&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #ff9ff3, #a29bfe, #74b9ff);
+      color: #fff;
+      min-height: 100vh;
+    }
+
+    header {
+      background: linear-gradient(90deg, #ff6ec4, #7873f5);
+      box-shadow: 0 4px 10px rgba(0, 0, 0, .3);
+    }
+
+    .nav-link {
+      color: #fff !important;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .nav-link:hover {
+      color: #ffeaa7 !important;
+      text-shadow: 0 0 8px #fff;
+    }
+
+    .botao-inicio {
+      background: linear-gradient(45deg, #ff6ec4, #7873f5);
+      border: none;
+      box-shadow: 0 0 15px rgba(255, 110, 196, 0.8);
+      transition: all 0.3s ease;
+    }
+
+    .botao-inicio:hover {
+      transform: scale(1.1);
+      box-shadow: 0 0 25px rgba(255, 110, 196, 1);
+    }
+
+    h1, h2 {
+      text-shadow: 0 0 10px rgba(0, 0, 0, .6);
+    }
+
+    /* Galeria */
+    .galeria img {
+      width: 100%;
+      max-width: 400px;
+      margin: 15px;
+      border-radius: 20px;
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+    }
+
+    .galeria img:hover {
+      transform: scale(1.08) rotate(-1deg);
+      box-shadow: 0 0 25px rgba(255, 110, 196, 0.9), 0 0 50px rgba(120, 115, 245, 0.7);
+    }
+
+    /* Formulário */
+    .formulario {
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(10px);
+      padding: 30px;
+      box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+    }
+
+    .form-control {
+      border: none;
+      background: rgba(255, 255, 255, 0.8);
+    }
+
+    .btn-primary {
+      background: linear-gradient(45deg, #6c5ce7, #00cec9);
+      border: none;
+      transition: all 0.3s;
+    }
+
+    .btn-primary:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 15px #6c5ce7, 0 0 25px #00cec9;
+    }
+
+    footer {
+      background: linear-gradient(90deg, #ff6ec4, #7873f5);
+      padding: 20px;
+      color: #fff;
+    }
+
+    footer i {
+      font-size: 1.5rem;
+      margin: 0 10px;
+      transition: 0.3s;
+    }
+
+    footer i:hover {
+      transform: scale(1.2);
+      color: #ffeaa7;
+      text-shadow: 0 0 10px #fff;
+    }
+  </style>
+</head>
+
+<body>
+  <header class="p-4">
+    <nav class="container d-flex justify-content-between align-items-center" >
+            <img src="img/logo.png" class="nav-img " loading="lazy">
+            <ul class="nav mt-5">
+                <li class="nav-item"><a class="nav-link" href="#inicio">Início</a></li>
+                <li class="nav-item"><a class="nav-link" href="#galeria">Galeria</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+            </ul>
+            <div id="acessibilidade" class="menu-acessibilidade"> 
+                <button id="botao-acessibilidade" class="btn btn-primary fw-bold rotacao-botao" aria-expanded="false">acessibilidade</button>
+                <div id="opcoes-acessibilidade" class="opcoes-acessibilidade apresenta-lista">
+                    <button id="aumentar-fonte" class="btn btn-primary fw-bold" aria-label="Aumentar o tamanho da fonte">A+</button>
+                    <button id="diminuir-fonte" class="btn btn-primary fw-bold" aria-label="diminuir o tamanho da fonte">A-</button>
+                    <button id="alterna-contraste" class="btn btn-primary fw-bold" aria-label="Alterna o contraste de cores"> <i class="bi bi-shadows"></i></button>         
+                </div>
+            </div>
+        </nav>
+  </header>
+
+  <main class="container my-5">
+    <section id="inicio" class="text-center">
+      <h1 class="fw-bold">✨ Bem-vindos ao mundo de Jimin ✨</h1>
+      <img src="img/acessibilidade/img/43256756624_da58ea0cb0_b.jpg" alt="Jimin" class="img-fluid rounded-4 shadow-lg my-3">
+      <a href="#tropicalia" class="btn btn-primary btn-lg rounded-pill botao-inicio">Quero conhecer!</a>
+    </section>
+
+    <section id="bts" class="my-5">
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <h2>BTS</h2>
+          <p>Jimin é cantor, dançarino e performer do grupo BTS, maior boy band do mundo! Ele nasceu em 1995, na Coreia do Sul, debutou em 2013. Jimin tambem ja lançou algumas musicas como <em>Lie</em>, <em>Serendipity</em> e <em>Filter</em>. 💜</p> um de seus albuns mais recentes é "muse", laçado em 2024. Uma curiosidade é que o album estava sendo produzido desde 2023. O album foi produzido antes do seu alistamento militar, e foi lançado enquanto ele estava no serviço 
+        </div>
+      </div>
+    </section>
+
+    <section id="galeria">
+      <h2 class="text-center">🌟 Galeria 🌟</h2>
+      <div class="row justify-content-center galeria">
+        <img src="img//acessibilidade-20250828T224838Z-1-001/acessibilidade/img/43256756624_da58ea0cb0_b.jpg" alt="jona">
+        <img src="img/acessibilidade/img/Jimin_on_Melon_Music_Awards_2016.jpg" alt="BTS Jimin">
+        <img src="img/acessibilidade/img/Jimin_on_Melon_Music_Awards_2016.jpg" alt="Jimin Awards">
+        <img src="img//acessibilidade-20250828T224838Z-1-001/acessibilidade/img/image.png" alt="BTS">
+      </div>
+    </section>
+
+    <section id="contato" class="my-5">
+      <div class="container d-flex justify-content-center">
+        <div class="col-md-8 formulario rounded-4">
+          <h2 class="text-center">Entre em contato 💌</h2>
+          <form>
+            <div class="form-group mb-3">
+              <label for="nome">Nome</label>
+              <input type="text" id="nome" name="nome" class="form-control rounded-3 mt-1" placeholder="Digite seu nome completo">
+            </div>
+            <div class="form-group mb-3">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" class="form-control rounded-3 mt-1" placeholder="Digite seu email">
+            </div>
+            <div class="form-group mb-3">
+              <label for="mensagem">Mensagem</label>
+              <textarea id="mensagem" name="mensagem" class="form-control rounded-4 mt-2" rows="4" placeholder="Escreva sua mensagem"></textarea>
+            </div>
+            <div class="d-grid">
+              <button type="submit" class="btn btn-primary btn-lg rounded-pill">Enviar mensagem</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="text-center">
+    <p class="mb-2">Acesse nossas redes:</p>
+    <i class="bi bi-whatsapp"></i>
+    <i class="bi bi-instagram"></i>
+    <i class="bi bi-tiktok"></i>
+    <p class="mt-3">Desenvolvido por JuJu do pix ;-;</p>
+  </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollReveal.js/4.0.9/scrollreveal.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
